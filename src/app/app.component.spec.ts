@@ -1,32 +1,21 @@
-import { TestBed, async } from '@angular/core/testing';
+// import { AppComponent } from './app.component';
 
-import { AppComponent } from './app.component';
+// fdescribe('AppComponent', () => {
 
-describe('AppComponent', () => {
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-    }).compileComponents();
-  }));
+//   let app: AppComponent;
+//   const mockToDoService = {
+//     addItem: () => { },
+//     getChanges: () => { },
+//     changes: null,
+//     items: ['item 1', 'item 2', 'item 3']
+//   };
 
-  it('should create the app', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app).toBeTruthy();
-  }));
+//   beforeEach(() => {
+//     app = new AppComponent(mockToDoService);
+//   });
 
-  it(`should have as title 'app works!'`, async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('app works!');
-  }));
+//   it('should count the number of items', () => {
 
-  it('should render title in a h1 tag', async(() => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('app works!');
-  }));
-});
+//   });
+
+// });
