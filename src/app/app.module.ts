@@ -19,7 +19,6 @@ import { CapitalizePipe } from './capitalize.pipe';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
   ],
   providers: [
     ToDoService
