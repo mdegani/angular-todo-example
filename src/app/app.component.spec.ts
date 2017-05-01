@@ -27,16 +27,14 @@ fdescribe('AppComponent', () => {
     comp = fixture.componentInstance;
   });
 
-  xit('should count the number of items', () => {
+  it('should count the number of items', () => {
     expect(comp.itemCount()).toEqual(3);
   });
 
   it('should show all todo items', () => {
-    const el = fixture.debugElement.query(By.css('ul'));
     fixture.detectChanges();
-    console.log(el);
-    console.log(fixture.nativeElement);
-    // expect(el.children.length).toEqual(3);
+    const el = fixture.debugElement.query(By.css('ul'));
+    expect(el.children.length).toEqual(3);
   });
 
 });
