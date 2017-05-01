@@ -6,7 +6,7 @@ import { AppModule } from './app.module';
 import { By } from '@angular/platform-browser';
 
 
-fdescribe('AppComponent', () => {
+describe('AppComponent', () => {
 
   let fixture: ComponentFixture<AppComponent>;
   let comp: AppComponent;

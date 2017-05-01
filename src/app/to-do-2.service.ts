@@ -3,7 +3,7 @@ import {Http} from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class ToDoService {
+export class ToDoService2 {
   public todoList = [];
   constructor(private http: Http) { }
 
