@@ -3,7 +3,7 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
-export class HttpWrapper {
+export class ApiService {
   constructor(private http: Http) { }
 
   get(path) {

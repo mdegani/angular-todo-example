@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
-import { HttpWrapper } from './api-service.service';
+import { ApiService } from './api-service.service';
 import 'rxjs/add/operator/map';
 
 @Injectable()
 export class ToDoService3 {
   public todoList = [];
-  constructor(private http: HttpWrapper) { }
+  constructor(private http: ApiService) { }
 
   getProducts() {
     return this.http.get('todos')

@@ -3,7 +3,7 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 
 import { ToDoService3 } from './to-do-3.service';
-import { HttpWrapper } from './api-service.service';
+import { ApiService } from './api-service.service';
 
 fdescribe('ToDoService3', () => {
   let service: ToDoService3;
@@ -21,7 +21,7 @@ fdescribe('ToDoService3', () => {
         }
       ])
     };
-    service = new ToDoService3(fakeApiService as HttpWrapper)
+    service = new ToDoService3(fakeApiService as ApiService);
   });
 
   it('should format the retrieved data', () => {
